@@ -16,11 +16,6 @@ public class SpringRedisExampleApplication {
 	}
 
 	@Bean
-	RedisTemplate<String, User> redisTemplate() {
-		RedisTemplate<String, User> redisTemplate = new RedisTemplate<>();
-		redisTemplate.setConnectionFactory(jedisConnectionFactory());
-		return redisTemplate;
- 	}
 
 
 	public static void main(String[] args) {
